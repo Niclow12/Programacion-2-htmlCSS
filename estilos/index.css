@@ -1,0 +1,135 @@
+*{
+    border: 1px green solid;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    }
+
+a{
+    text-decoration: none;
+    width: auto;
+}
+
+
+#nav-bar{
+    background-color: rgba(0, 0, 0, 0.781);
+    /* background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 196, 0, 0.6)); */
+    overflow: hidden;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.Icon-Home{
+
+}
+
+.Icon-Home img {
+height: 50px;
+width: 50px;
+margin-left: 20px;
+transition: .5s;
+}
+.Icon-Home img:hover{
+    height: 100px;
+    width: 100px;
+  }
+.navegador ul {
+    list-style: none;
+    display:flex;
+    /* padding: 20px 0; */
+}
+
+.navegador ul li {
+    padding: 20px;
+}
+
+
+.navegador ul li a{
+    padding: 1.6rem;
+    color: aliceblue;
+    font-weight: bold;
+    transition: .25s;
+}
+.navegador ul li a:hover{
+    font-size: 50px;
+}
+.verano:hover{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Verano.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.otoño:hover{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/OtoñoNav.jpg);
+    background-repeat: no-repeat;
+     background-size: 100%;
+}
+.primavera:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Primavera-nav.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+    }
+
+.invierno:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Invierno-nav.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  
+}
+.navegador ul li a.selected:hover{
+    /* background-color:rgba(39, 39, 39, 0.74); */
+    height: 50px;
+}
+
+
+
+/* SECCION PORTADA */
+.Portada{
+    position:relative;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.videoHome {
+    width: 100%;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(125, 185, 224, 0.6));
+    
+}
+
+.absolute{
+    width: 50%;
+    height:100%;
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+section h1 {
+    color:aliceblue;
+    font-size: 100px;
+    font-weight: 900;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+section p {
+
+    color: aliceblue;
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    
+}

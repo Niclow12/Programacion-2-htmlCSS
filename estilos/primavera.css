@@ -1,0 +1,121 @@
+*{
+    /* border: 1px green solid; */
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin:0;
+    }
+
+    a{
+        text-decoration: none;
+        width: auto;
+}
+
+
+#nav-bar{
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Primavera-nav.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow: hidden;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.Icon-Home{
+
+}
+
+.Icon-Home img {
+height: 50px;
+width: 50px;
+margin-left: 20px;
+transition: .5s;
+}
+.Icon-Home img:hover{
+    height: 100px;
+    width: 100px;
+  }
+
+.navegador ul {
+    list-style: none;
+    display:flex;
+    /* padding: 20px 0; */
+}
+
+.navegador ul li {
+    padding: 20px;
+}
+
+
+.navegador ul li a{
+    padding: 1.6rem;
+    color: aliceblue;
+    font-weight: bold;
+    transition: .25s;
+}
+.navegador ul li a:hover{
+    font-size: 50px;
+}
+.verano:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Verano.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.otoño:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/OtoñoNav.jpg);
+    background-repeat: no-repeat;
+     background-size: 100%;
+}
+.primavera:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Primavera-nav.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+    }
+
+.invierno:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(/images/Invierno-nav.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  
+}
+.navegador ul li a.selected:hover{
+    /* background-color:rgba(39, 39, 39, 0.74); */
+    height: 50px;
+}
+
+/* SECCION PORTADA */
+.Portada {
+    
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(125, 185, 224, 0.6)) ,url(/images/Primavera-nav.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+section{
+    padding: 50px;
+}
+
+section h1 {
+    color:aliceblue;
+    text-align: center;
+    font-size: 100px;
+}
+
+section p {
+    color: aliceblue;
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
