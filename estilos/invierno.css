@@ -17,6 +17,7 @@ video{
     position: fixed;
     bottom: 30px;
     right: 30px;
+    border-radius: 10px;
     transition: .5s;
 }
 video:hover {

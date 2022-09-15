@@ -162,9 +162,21 @@ main{
     height: 500px;
     box-shadow: 5px 3px 15px #ff0000bb;
 }
-/* footer */
+
+/* footer -------------------------------------------------------*/
 
 footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
     height: 500px;
     background-color: rgb(74, 74, 206);
+}
+
+
+.columnFoot{
+    background-color: #fff;
+    
+    display: flex;
+    
 }
