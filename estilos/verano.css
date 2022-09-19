@@ -1,32 +1,32 @@
 *{
   /* border: 1px green solid; */
   font-family: Arial, Helvetica, sans-serif;
-
   margin:0;
+  box-sizing: border-box;
   }
 
-  a{
-      text-decoration: none;
-      width: auto;
+  body, section, header, footer {
+      position: relative;
+  }
+
+a {
+  text-decoration: none;
+  width: auto;
+  cursor: pointer;
+}
+a:visited{
+  color:black;
 }
 
 /* Video */
 video{
-  width: 300px;
-  height: 170px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 10px;
+  display: block;
+    width: 100%;
+  height: auto;
   transition: .5s;
+  border-radius: 8px;
 }
-video:hover {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 400px;
-  height: 220px;
-}
+
 
 /* nav-bar */
 #nav-bar{
@@ -38,12 +38,11 @@ video:hover {
   overflow: hidden;
 
 }
+
 .container{
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-}
-.Icon-Home{
 }
 
 .Icon-Home img {
@@ -111,30 +110,385 @@ video:hover {
 
 /* SECCION PORTADA */
 .Portada {
-  
-  height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(125, 185, 224, 0.6)) ,url(/images/Verano.jpg);
+  width: 100%;
+  position: relative;
+  height: 70vh;
+  background-image: url(/images/Verano.jpg);
   background-repeat: no-repeat;
+  background-size: 130%;
   background-attachment: fixed;
-  background-size: 100%;
-
 }
 
-section{
-  padding: 50px;
-}
-
-section h1 {
-  color:aliceblue;
-  text-align: center;
-  font-size: 100px;
-}
-
-section p {
-  color: aliceblue;
-  text-align: center;
-  margin: 50px;
-  font-weight: bold;
-  font-size: 25px;
+.Portada img {
+  
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
   
 }
+
+.absolute{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.048));
+}
+
+.absolute h1 {
+  display: block;
+  width: 50%;
+  /* border:2px red solid; */
+  color: antiquewhite;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  
+}
+
+
+
+/* Main------------------------------------------------- */
+main{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+}
+
+.main-container{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contenedor{
+  background-color: white;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  gap: 2em;
+  padding: 20px 10px;
+  width: 90%;
+  margin:auto;
+  
+  
+}
+
+.Estaciones{
+  padding:10px;
+  text-align: justify;
+}
+
+#Card-Intro{
+ width: 100%;
+  display: block;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #989898b6;
+  min-width: 248px;
+  transition: 2s;
+  text-align: center;
+  padding: 20px;
+}
+
+#Card-Intro  h2 {
+  margin-bottom: 10px;
+ }
+ 
+ #Card-Intro p {
+     display: block;
+    
+ }
+
+.cards{
+  display: block;
+  width: 250px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #989898b6;
+  transition: 1s;
+ 
+  
+}
+/* Cards Hover */
+#Verano:hover{
+  display: block;
+  width: 300px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #ff0000b6;
+ }
+ #otoño:hover{
+  display: block;
+  width: 300px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #eb7100cb;
+ }
+ #Invierno:hover{
+  display: block;
+  width: 300px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #0078e9de;
+ }
+ #Primavera:hover{
+  display: block;
+  width: 300px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.637) solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #8ffc00b6;
+ }
+/* FIN Cards Hover */
+.cards img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.cards .Estaciones h2 {
+margin-bottom: 10px;
+}
+
+.cards .Estaciones p {
+  display: block;
+  text-align: left;
+}
+/* FOOTER----------------------------------------------- */
+
+footer{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.781);
+  /* padding: 40px; */
+}
+
+#PersonalInfoFoot{
+  line-height: 2;
+}
+
+.container-Footer{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.contenedor-Columnas{
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.columnFoot{
+max-width: 400px;
+  
+}
+
+.columnFoot a {
+  color: #fff;
+  text-decoration: none;
+  width: auto;
+  cursor: pointer;
+}
+.columnFoot h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.columnFoot p{
+  text-align: left;
+  font-size: 14px ;
+  margin-top: 20px;
+  
+}
+.columnFoot .row{
+  margin-top: 20px;
+}
+
+.columnFoot .row img{
+  width: 36px;
+  height: 36px;
+}
+.row label{
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 150px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright{
+  color: #989898;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+
+.copyright .label2{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width :1100px) {
+      
+  
+  /* PORTADA--------------------------- */
+  .Portada {
+      width: 100%;
+      position: relative;
+      height: 500px;
+      background-image: url(/images/Verano.jpg);
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-attachment: fixed;
+    }
+    
+    .Portada img {
+      
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      
+    }
+ 
+  
+      /* footer---------------- */
+      .contenedor-Columnas{
+  
+          display: block;
+      }
+  
+      .columnFoot{
+         margin-top: 50px;
+        }
+  
+        .copyright {
+          margin-top: 50px;
+      }
+      
+  }
+  
+  @media (max-width:800px){
+      /* NAV--------------------- */
+  
+      .navegador ul {
+          list-style: none;
+          display:block;
+          /* padding: 20px 0; */
+      }
+      
+      .navegador ul li {
+          padding: 20px;
+          display: block;
+      }
+  
+      .navegador ul li a:hover{
+          font-size: 40px;
+      }
+  
+      .container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+      }
+      /* portada--------------- */
+      .Portada {
+          width: 100%;
+          position: relative;
+          height: 205px;
+          background-image: url(/images/Verano.jpg);
+          background-repeat: no-repeat;
+          background-size: 150%;
+          background-attachment: fixed;
+        }
+      section h1 {
+          display: block;
+          width: 50%;
+          /* border:2px red solid; */
+          color: antiquewhite;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 5rem;
+          text-align: center;
+          margin: 20px;
+          padding: 20px;
+          
+      }
+      
+  }
+  
+  @media (max-width:600px) {
+      
+      section h1 {
+          display: block;
+          width: 50%;
+          /* border:2px red solid; */
+          color: antiquewhite;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 2rem;
+          text-align: center;
+          margin: 20px;
+          padding: 20px;
+          
+      }
+      
+  }
+  
+  @media (max-width:420px) {
+      .Portada {
+          width: 100%;
+          position: relative;
+          height: 200px;
+          background-image: url(/images/Verano.jpg);
+          background-repeat: no-repeat;
+          background-size: 200%;
+          background-attachment: fixed;
+        }
+
+      section h1 {
+          display: block;
+          width: 50%;
+          /* border:2px red solid; */
+          color: antiquewhite;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 2rem;
+          text-align: center;
+          margin: 20px;
+          padding: 20px;
+          
+      }
+      
+  }
+  
+  @media (max-width:300px) {
+      
+      section h1 {
+          display: block;
+          width: 50%;
+          /* border:2px red solid; */
+          color: antiquewhite;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 2rem;
+          text-align: center;
+          margin: 20px;
+          padding: 20px;
+          
+      }
+      
+  }

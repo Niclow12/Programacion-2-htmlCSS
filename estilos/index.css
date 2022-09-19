@@ -10,12 +10,13 @@
     }
 
 a {
-    color:#fff;
     text-decoration: none;
     width: auto;
     cursor: pointer;
 }
-
+a:visited{
+    color:black;
+}
 
 #nav-bar{
     background-color: rgba(0, 0, 0, 0.781);
@@ -101,10 +102,7 @@ transition: .5s;
    justify-content: center;
     display: flex;
 }
-/* video{
-    width: 100%;
-    height: 100%;
-} */
+
 .videoHome {
     width: 100%;
 }
@@ -278,6 +276,13 @@ footer{
 .columnFoot{
   max-width: 400px;
     
+}
+
+.columnFoot a {
+    color: #fff;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
 }
 .columnFoot h3{
     font-size: 25px;
